@@ -16,7 +16,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import primeirafase.vaga.controller.PersonagemController;
+import primeirafase.vaga.controller.CharacterController;
 import primeirafase.vaga.entity.Character;
 import primeirafase.vaga.repository.PersonagemRepository;
 
@@ -27,7 +27,7 @@ public class PersonagemControllerTest {
     private PersonagemRepository personagemRepository;
 
     @InjectMocks
-    private PersonagemController personagemController;
+    private CharacterController personagemController;
 
     @BeforeEach
     public void setUp() {
