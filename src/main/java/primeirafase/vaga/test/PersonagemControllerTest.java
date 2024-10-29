@@ -18,13 +18,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import primeirafase.vaga.controller.CharacterController;
 import primeirafase.vaga.entity.Character;
-import primeirafase.vaga.repository.PersonagemRepository;
+import primeirafase.vaga.repository.CharacterRepository;
 
 @SpringBootTest
 public class PersonagemControllerTest {
 
     @Mock
-    private PersonagemRepository personagemRepository;
+    private CharacterRepository personagemRepository;
 
     @InjectMocks
     private CharacterController personagemController;

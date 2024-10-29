@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import primeirafase.vaga.entity.Character;
-import primeirafase.vaga.repository.PersonagemRepository;
+import primeirafase.vaga.repository.CharacterRepository;
 
 @RestController
 @RequestMapping("/characters")
 public class CharacterController {
     
     @Autowired
-    private PersonagemRepository characterRepository;
+    private CharacterRepository characterRepository;
 
     //Create
     @PostMapping("/")
