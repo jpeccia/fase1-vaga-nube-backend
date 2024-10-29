@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import primeirafase.vaga.entity.Personagem;
+import primeirafase.vaga.entity.Character;
 import primeirafase.vaga.repository.PersonagemRepository;
 
 @RestController
@@ -24,26 +24,26 @@ public class PersonagemController {
 
     //Create
     @PostMapping("/")
-    public Personagem createPersonagem(@RequestBody Personagem personagem){
+    public Character createPersonagem(@RequestBody Character personagem){
         return personagemRepository.save(personagem);
     }
 
     //Read All
     @GetMapping
-    public List<Personagem> getAllPersonagens(){
+    public List<Character> getAllPersonagens(){
         return personagemRepository.findAll();
     }
 
     //Read by Id
     @GetMapping("/{id}")
-    public Personagem getPersonagemById(@PathVariable Long id){
+    public Character getPersonagemById(@PathVariable Long id){
         return personagemRepository.findById(id).orElse(null);
     }
 
     //Update
     @PutMapping("/{id}")
-    public Personagem updatePersonagem(@PathVariable Long id, @RequestBody Personagem personagemDetails){
-        Personagem personagem = personagemRepository.findById(id).orElse(null);
+    public Character updatePersonagem(@PathVariable Long id, @RequestBody Character personagemDetails){
+        Character personagem = personagemRepository.findById(id).orElse(null);
         if(personagem != null){
             personagem.setNome(personagemDetails.getNome());
             personagem.setClasse(personagemDetails.getClasse());
