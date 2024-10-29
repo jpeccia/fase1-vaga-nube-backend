@@ -3,6 +3,7 @@ package primeirafase.vaga.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +24,7 @@ public class PersonagemController {
 
     //Create
     @PostMapping("/")
-    public Personagem create(@RequestBody Personagem personagem){
+    public Personagem createPersonagem(@RequestBody Personagem personagem){
         return personagemRepository.save(personagem);
     }
 
@@ -48,7 +49,14 @@ public class PersonagemController {
             personagem.setClasse(personagemDetails.getClasse());
             personagem.setNivel(personagemDetails.getNivel());
             personagem.setExp(personagemDetails.getExp());
-
+            return personagemRepository.save(personagem);
         }
+        return null;
+    }
+
+    //Delete
+    @DeleteMapping("/{id}")
+    public void deletePersonagem(@PathVariable Long id){
+        personagemRepository.deleteById(id);
     }
 }
