@@ -1,8 +1,8 @@
 <h1 align="center" style="font-weight: bold;">Desafio Fase 1 - Rpg Character CRUD 💻(Back End)</h1>
 
 <p align="center">
- <a href="#tech">Technologies</a> • 
- <a href="#started">Getting Started</a> • 
+ <a href="#tech">Tecnologias</a> • 
+ <a href="#started">Começando</a> • 
    <a href="#routes">API Endpoints</a> •
 
 <p align="center">
@@ -14,7 +14,7 @@
      <a href="PROJECT__URL">📱 Visit this Project</a>
 </p>
 
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="technologies">💻 Tecnologias</h2>
 
 - Java
 - Spring Boot
@@ -25,11 +25,9 @@
 - Docker
 - Insomnia
 
-<h2 id="started">🚀 Getting started</h2>
+<h2 id="started">🚀 Começando</h2>
 
-<h3>Prerequisites</h3>
-
-Here you list all prerequisites necessary for running your project. For example:
+<h3>Pre-Requisitos</h3>
 
 - [Docker](https://www.docker.com/products/docker-desktop/)
 - [Java](https://www.java.com/pt-BR/download/manual.jsp)
@@ -41,8 +39,6 @@ Clone o Repositório
 ```bash
 git clone https://github.com/seu_usuario/seu_repositorio.git
 ```
-
-<h3>Starting</h3>
 
 Como iniciar seu projeto.
 
