@@ -10,10 +10,6 @@
     <b>Aplicação criada para um desafio de uma vaga.</b>
 </p>
 
-<p align="center">
-     <a href="PROJECT__URL">📱 Visit this Project</a>
-</p>
-
 <h2 id="technologies">💻 Tecnologias</h2>
 
 - Java
